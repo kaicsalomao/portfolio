@@ -14,4 +14,4 @@ def user(user_name):
 
 
 if __name__ == "__main__":
-    app.run("localhost", 8080, debug=True)
+    app.run(debug=True)
