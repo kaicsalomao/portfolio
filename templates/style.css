@@ -1,0 +1,99 @@
+/* Arquivo style.css */
+
+/* Importar a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Selecionar todos os elementos HTML e definir a fonte padrão */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Selecionar o elemento body e definir a cor de fundo */
+body {
+    background-color: hsl(210, 100%, 50%); /* Azul escuro */
+}
+
+/* Selecionar o elemento header e definir o espaçamento interno */
+header {
+    padding: 2rem;
+}
+
+/* Selecionar o elemento h1 e definir a cor, o tamanho e o alinhamento do texto */
+h1 {
+    color: hsl(0, 0%, 100%); /* Branco */
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Selecionar o elemento p e definir a cor e o tamanho do texto */
+p {
+    color: hsl(0, 0%, 0%); /* Preto */
+    font-size: 1.2rem;
+}
+
+/* Selecionar o elemento h2 e definir a cor, o tamanho, o alinhamento e a borda inferior do texto */
+h2 {
+    color: hsl(0, 0%, 100%); /* Branco */
+    font-size: 2rem;
+    text-align: left;
+    border-bottom: 0.2rem solid hsl(0, 0%, 100%); /* Branco */
+}
+
+/* Selecionar o último elemento p e definir a cor e o alinhamento do texto */
+p:last-of-type {
+    color: hsl(0, 0%, 100%); /* Branco */
+    text-align: right;
+}
+
+/* Selecionar o elemento main e definir o espaçamento interno e externo */
+main {
+    padding: 2rem;
+    margin: 2rem;
+}
+
+/* Selecionar o elemento section e definir o espaçamento externo */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Selecionar o elemento footer e definir o espaçamento interno e a cor de fundo */
+footer {
+    padding: 2rem;
+    background-color: hsl(210, 50%, 30%); /* Azul médio */
+}
+
+/* Selecionar o elemento nav e definir o espaçamento externo */
+nav {
+    margin-top: 2rem;
+}
+
+/* Selecionar o elemento ul e definir o estilo da lista */
+ul {
+    list-style: none;
+}
+
+/* Selecionar o elemento li e definir o espaçamento interno */
+li {
+    padding: 0.5rem;
+}
+
+/* Selecionar o elemento a e definir a cor, o tamanho, o estilo e o efeito do texto */
+a {
+    color: hsl(0, 0%, 100%); /* Branco */
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s; /* Transição suave */
+}
+
+/* Selecionar o elemento a quando o mouse passa sobre ele e definir a cor e o estilo do texto */
+a:hover {
+    color: hsl(210, 100%, 70%); /* Azul claro */
+    text-decoration: underline;
+}
+
+/* Selecionar o elemento h1 quando o usuário clica nele e definir a cor e a transformação do texto */
+h1:active {
+    color: hsl(0, 100%, 50%); /* Vermelho */
+    transform: scale(1.1); /* Aumentar o tamanho */
+}
+
