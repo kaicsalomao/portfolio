@@ -1,58 +1,64 @@
+<!-- home.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Kaic Salomão</title>
-    <!-- Referenciar o arquivo externo de estilo -->
-    <link rel="stylesheet" href="style.css">
+    <title>Página pessoal de Kaic Salomão</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Importar o Bootstrap do CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <!-- Criar um elemento de cabeçalho -->
-    <header>
-        <!-- Criar um elemento de título -->
-        <h1 id="titulo">Olá, eu sou Kaic Salomão</h1>
-        <!-- Criar um elemento de parágrafo -->
-        <p id="introducao">Esta é a minha página pessoal, onde eu vou compartilhar um pouco sobre mim.</p>
-    </header>
-    <!-- Criar um elemento principal -->
-    <main>
-        <!-- Criar um elemento de seção -->
-        <section id="quem-sou-eu">
-            <!-- Criar um elemento de subtítulo -->
-            <h2>Quem sou eu</h2>
-            <!-- Criar um elemento de parágrafo -->
-            <p>Eu sou um entusiasta da programação! Desde meus onze anos, sempre escrevi código, me aperfeiçoei e melhorei durante esse tempo de experiência</p>
+     
+    <!-- Criar um container para o conteúdo da página -->
+    <div class="container-fluid">
+        <!-- Criar uma seção para o cabeçalho da página -->
+        <section id="header">
+          <div class="text-center">
+            <!-- Criar um elemento h1 para o nome -->
+            <h1 class="display-4">Kaic Salomão</h1>
+            <!-- Criar um elemento p para a descrição -->
+            <p class="lead">Um desenvolvedor back-end capacitado</p>
+          </div>
         </section>
-        <!-- Criar outro elemento de seção -->
-        <section id="o-que-eu-faco">
-            <!-- Criar outro elemento de subtítulo -->
-            <h2>O que eu faço</h2>
-            <!-- Criar outro elemento de parágrafo -->
-            <p>Atualmente, me comprometo em fazer sistemas back-end de alto nível, com foco em desempenho e segurança</p>
+        <!-- Criar uma seção para o corpo da página -->
+        <section id="body">
+            <!-- Criar um elemento div para o conteúdo -->
+            <div class="content">
+                <!-- Criar um elemento h2 para o título -->
+                <h2>Sobre mim</h2>
+                <!-- Criar um elemento p para o texto -->
+                <p>Olá, eu sou Kaic Salomão, um desenvolvedor apaixonado por programação! Eu tenho experiência em criar aplicações Android robustas, rápidas e seguras. Eu também tenho conhecimentos em bancos de dados, APIs, e sistemas back-end. Eu estou sempre buscando aprender novas ferramentas e técnicas para melhorar as minhas habilidades e os meus projetos.</p>
+                <!-- Criar um elemento h2 para o título -->
+                <h2>Projetos</h2>
+                <!-- Criar um elemento ul para a lista de projetos -->
+                <ul>
+                    <!-- Criar um elemento li para cada projeto -->
+                    <li><a href="https://github.com/kaicsm/blog">Blog pessoal</a>: Você está experimentando este projeto agora mesmo! É o meu blog escrito com python e Flask.</li>
+                    <li><a href="https://github.com/kaicsm/welcome-rs">Welcome Rust</a>: Uma aplicação escrita em Rust que reune meus conhecimentos nessa linguagem de programação</li>
+                    <li><a href="https://github.com/kaicsm/dracula-androidide">Dracula-AndroidIDE</a>: Tema Dracula feito para o AndroidIDE, uma ferramenta poderosa para criação de aplicativos no próprio Android</li>
+                </ul>
+                <!-- Criar um elemento h2 para o título -->
+                <h2>Contato</h2>
+                <!-- Criar um elemento p para o texto -->
+                <p>Se você quiser entrar em contato comigo, você pode me enviar um e-mail para ikaicsh@gmail.com ou me seguir nas redes sociais:</p>
+                <!-- Criar um elemento ul para a lista de redes sociais -->
+                <ul>
+                    <!-- Criar um elemento li para cada rede social -->
+            <li><a href="https://instagram.com/eukaiic"><img src="/static/icons/instagram.svg"> Instagram</a></li>
+            <li><a href="https://github.com/kaicsm"><img src="/static/icons/github.svg"> Github</a></li>
+                </ul>
+            </div>
         </section>
-        <!-- Criar mais um elemento de seção -->
-        <section id="o-que-eu-gosto">
-            <!-- Criar mais um elemento de subtítulo -->
-            <h2>O que eu gosto</h2>
-            <!-- Criar mais um elemento de parágrafo -->
-            <p>Eu adoro jogar DDNet!</p>
+        <!-- Criar uma seção para o rodapé da página -->
+        <section id="footer">
+            <!-- Criar um elemento p para o texto -->
+            <p>© 2024 Kaic Salomão. Todos os direitos reservados.</p>
         </section>
-    </main>
-    <!-- Criar um elemento de rodapé -->
-    <footer>
-        <!-- Criar um elemento de navegação -->
-        <nav id="contato">
-            <!-- Criar um elemento de lista não ordenada -->
-            <ul>
-                <!-- Criar um elemento de item de lista -->
-                <li>
-                    <!-- Criar um elemento de link -->
-                    <a href="https://www.instagram.com/eukaiic/" target="_blank">Contate-me no instagram! @eukaiic</a>
-                </li>
-            </ul>
-        </nav>
-    </footer>
+    </div>
+    <!-- Importar o jQuery e o Bootstrap do CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
 
