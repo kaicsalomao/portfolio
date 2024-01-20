@@ -1,0 +1,88 @@
+body {
+  background: #0f111a;
+  color: #f8f8f2;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  margin-top: 20px;
+}
+
+#header {
+  padding: 20px 0;
+}
+
+.page-title {
+  color: #b58bfc;
+  font-size: 2em;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.lead {
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #6272a4;
+}
+
+#body {
+  margin-top: 10px;
+}
+
+.content {
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #282a36, #44475a, #282a36);
+  border: 2px solid #6272a4;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+  color: #b58bfc;
+  margin-top: 15px;
+  font-size: 1.8em;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+a {
+  color: #8be9fd;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #50fa7b;
+}
+
+.social-icon {
+  filter: invert(1) grayscale(100%) brightness(100%);
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.project-card {
+  background: #282a36;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 2px solid #44475a;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.project-title {
+  color: #8be9fd;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: #f8f8f2;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

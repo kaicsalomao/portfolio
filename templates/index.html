@@ -1,64 +1,107 @@
-<!-- home.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Kaic Salomão - Página pessoal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- Importar o Bootstrap do CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-     
-    <!-- Criar um container para o conteúdo da página -->
-    <div class="container-fluid">
-        <!-- Criar uma seção para o cabeçalho da página -->
-        <section id="header">
-          <div class="text-center">
-            <!-- Criar um elemento h1 para o nome -->
-            <h1 class="display-4">Kaic Salomão</h1>
-            <!-- Criar um elemento p para a descrição -->
-            <p class="lead">Um desenvolvedor capacitado</p>
-          </div>
-        </section>
-        <!-- Criar uma seção para o corpo da página -->
-        <section id="body">
-            <!-- Criar um elemento div para o conteúdo -->
-            <div class="content">
-                <!-- Criar um elemento h2 para o título -->
-                <h2>Sobre mim</h2>
-                <!-- Criar um elemento p para o texto -->
-                <p>Olá, eu sou Kaic Salomão, um desenvolvedor apaixonado por programação! Eu tenho experiência em criar aplicações Android robustas, rápidas e seguras. Eu também tenho conhecimentos em bancos de dados, APIs, e sistemas back-end. Eu estou sempre buscando aprender novas ferramentas e técnicas para melhorar as minhas habilidades e os meus projetos.</p>
-                <!-- Criar um elemento h2 para o título -->
-                <h2>Projetos</h2>
-                <!-- Criar um elemento ul para a lista de projetos -->
-                <ul>
-                    <!-- Criar um elemento li para cada projeto -->
-                    <li><a href="https://github.com/kaicsm/portfolio">Portfólio</a>: Você está experimentando este projeto agora mesmo! Este é o meu portfólio escrito em python com Flask.</li>
-                    <li><a href="https://github.com/kaicsm/welcome-rs">Welcome Rust</a>: Uma aplicação escrita em Rust que reune meus conhecimentos nessa linguagem de programação</li>
-                    <li><a href="https://github.com/kaicsm/dracula-androidide">Dracula-AndroidIDE</a>: Tema Dracula feito para o AndroidIDE, uma ferramenta poderosa para criação de aplicativos no próprio Android</li>
-                </ul>
-                <!-- Criar um elemento h2 para o título -->
-                <h2>Contato</h2>
-                <!-- Criar um elemento p para o texto -->
-                <p>Se você quiser entrar em contato comigo, você pode me enviar um e-mail para ikaicsh@gmail.com ou me seguir nas redes sociais:</p>
-                <!-- Criar um elemento ul para a lista de redes sociais -->
-                <ul>
-                    <!-- Criar um elemento li para cada rede social -->
-            <li><a href="https://instagram.com/eukaiic"><img src="/static/icons/instagram.svg"> Instagram</a></li>
-            <li><a href="https://github.com/kaicsm"><img src="/static/icons/github.svg"> Github</a></li>
-                </ul>
-            </div>
-        </section>
-        <!-- Criar uma seção para o rodapé da página -->
-        <section id="footer">
-            <!-- Criar um elemento p para o texto -->
-            <p>© 2024 Kaic Salomão. Todos os direitos reservados.</p>
-        </section>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+  </head>
+  <body>
+    <div class="container">
+      <section id="header">
+        <h1 class="page-title">Kaic Salomão</h1>
+        <p class="lead">Um desenvolvedor apaixonado por programação</p>
+      </section>
+
+      <section id="body">
+        <div class="content">
+          <h2 class="about">Sobre mim</h2>
+          <p>
+            Olá, eu sou Kaic Salomão, um desenvolvedor apaixonado por
+            programação! Tenho experiência em criar aplicações Android robustas,
+            rápidas e seguras. Sempre buscando aprender novas ferramentas e
+            técnicas para melhorar minhas habilidades e projetos.
+          </p>
+
+          <h2 class="projects">Projetos</h2>
+          <ul>
+            <li class="project-card">
+              <h3 class="project-title">
+                <a href="https://github.com/kaicsm/portfolio">Portfólio</a>
+              </h3>
+              <p class="project-descrition">
+                Você está experimentando este projeto agora mesmo! Este é o meu
+                portfólio escrito em Python com Flask.
+              </p>
+            </li>
+            <li class="project-card">
+              <h3 class="project-title">
+                <a href="https://github.com/kaicsm/welcome-rs">Welcome Rust</a>
+              </h3>
+              <p class="project-descrition">
+                Uma aplicação escrita em Rust que reúne meus conhecimentos nessa
+                linguagem de programação.
+              </p>
+            </li>
+            <li class="project-card">
+              <h3 class="project-title">
+                <a href="https://github.com/kaicsm/dracula-androidide"
+                  >Dracula-AndroidIDE</a
+                >
+              </h3>
+              <p class="project-descrition">
+                Tema Dracula feito para o AndroidIDE, uma ferramenta poderosa
+                para criação de aplicativos no próprio Android.
+              </p>
+            </li>
+          </ul>
+
+          <h2>Contato</h2>
+          <p>
+            Entre em contato via e-mail em ikaicsh@gmail.com ou siga-me nas
+            redes sociais:
+          </p>
+          <ul>
+            <li>
+              <a href="https://instagram.com/eukaiic"
+                ><img
+                  src="/static/icons/instagram.svg"
+                  alt="Instagram Icon"
+                  class="social-icon"
+                />
+                Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/kaicsm"
+                ><img
+                  src="/static/icons/github.svg"
+                  alt="GitHub Icon"
+                  class="social-icon"
+                />
+                Github</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
-    <!-- Importar o jQuery e o Bootstrap do CDN -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
-
