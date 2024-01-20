@@ -42,10 +42,6 @@ h2 {
   font-size: 1.8em;
 }
 
-li {
-  margin-bottom: 15px;
-}
-
 a {
   color: #8be9fd;
   font-family: "Montserrat", sans-serif;
@@ -56,6 +52,10 @@ a:hover {
   color: #50fa7b;
 }
 
+/* Ajustar posição dos elementos em lista */
+li {
+  margin-top: 15px;
+}
 .social-icon {
   filter: invert(1) grayscale(100%) brightness(100%);
   width: 20px;
@@ -67,7 +67,7 @@ a:hover {
   background: #282a36;
   border-radius: 12px;
   padding: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border: 2px solid #44475a;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
