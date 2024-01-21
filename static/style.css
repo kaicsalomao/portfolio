@@ -3,7 +3,6 @@ body {
   color: #f8f8f2;
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  margin-top: 20px;
 }
 
 #particles-container canvas {
@@ -16,7 +15,6 @@ body {
 }
 
 #header {
-  margin-top: -20px;
   height: 100vh;
   padding: 20px 0;
   display: flex;
