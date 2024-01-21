@@ -1,5 +1,7 @@
 body {
   background: #0f111a;
+  width: 100%;
+  height: 100%;
   color: #f8f8f2;
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -38,27 +40,18 @@ body {
   color: #59c2ff;
 }
 
-.sinalization {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  border-color: #44475a;
-  border-width: 2px;
-  border-style: solid;
-  background-color: #282a36;
-  margin-left: 20px;
-  margin-top: -130px;
-}
-.sinalization-rect {
-  width: 2px;
-  height: 50px;
+.rect {
+  width: 0.5vw;
+  height: 20vw;
   background-color: #44475a;
-  margin-left: 45px;
+  margin-left: 9%;
+  margin-top: -16vh;
 }
+
 #body {
   margin-top: 0;
 }
-
+/* Others */
 .content {
   padding: 20px;
   border-radius: 12px;
@@ -66,7 +59,7 @@ body {
   border: 2px solid #44475a;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
-
+/* ... */
 h2 {
   color: #59c2ff;
   margin-top: 15px;
