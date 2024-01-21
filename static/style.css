@@ -41,8 +41,8 @@ body {
 }
 
 .rect {
-  width: 0.5vw;
-  height: 20vw;
+  width: 2px;
+  height: 22vw;
   background-color: #44475a;
   margin-left: 9%;
   margin-top: -16vh;
