@@ -40,17 +40,6 @@ body {
   color: #59c2ff;
 }
 
-.rect {
-  width: 2px;
-  height: 22vw;
-  background-color: #44475a;
-  margin-left: 9%;
-  margin-top: -16vh;
-}
-
-#body {
-  margin-top: 0;
-}
 /* Others */
 .content {
   padding: 20px;
