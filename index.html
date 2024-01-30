@@ -9,27 +9,21 @@
     />
 
     <!-- Favicon-->
-    <link
-      rel="icon"
-      href="{{ url_for('static', filename='icons/favicon.ico') }}"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="static/icons/favicon.ico" type="image/x-icon" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="{{ url_for('static', filename='icons/favicon-32x32.png') }}"
+      href="static/icons/favicon-32x32.png
+    "
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="{{ url_for('static', filename='icons/favicon-16x16.png') }}"
+      href="static/icons/favicon-16x16.png"
     />
-    <link
-      rel="manifest"
-      href="{{ url_for('static', filename='site.webmanifest') }}"
-    />
+    <link rel="manifest" href="static/site.webmanifest" />
 
     <link
       rel="stylesheet"
@@ -41,7 +35,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <link rel="stylesheet" href="static/style.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
@@ -134,7 +128,7 @@
               <li>
                 <a href="https://instagram.com/eukaiic"
                   ><img
-                    src="{{url_for('static', filename='icons/instagram.svg')}}"
+                    src="static/icons/instagram.svg"
                     alt="Instagram Icon"
                     class="social-icon"
                   />
@@ -144,7 +138,7 @@
               <li>
                 <a href="https://github.com/kaicsm"
                   ><img
-                    src="{{url_for('static', filename='icons/github.svg')}}"
+                    src="static/icons/github.svg"
                     alt="GitHub Icon"
                     class="social-icon"
                   />
@@ -161,16 +155,16 @@
     <script>
       particlesJS.load(
         "particles-container",
-        "{{ url_for('static', filename='particles.json') }}",
+        "static/particles.json",
         function () {
           console.log("particles.json foi carregado");
         },
       );
       var scrollOptions = {
-        delay:300,
-        duration:700,
-        distance:'50px',
-        origin:'top'
+        delay: 300,
+        duration: 700,
+        distance: "50px",
+        origin: "top",
       };
       ScrollReveal().reveal(".about", scrollOptions);
       ScrollReveal().reveal("#about-description", scrollOptions);
