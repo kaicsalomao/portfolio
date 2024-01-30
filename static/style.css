@@ -40,7 +40,6 @@ body {
   color: #59c2ff;
 }
 
-/* Others */
 .content {
   padding: 20px;
   border-radius: 12px;
@@ -48,38 +47,39 @@ body {
   border: 2px solid #44475a;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
+
 /* ... */
 h2 {
   color: #59c2ff;
   margin-top: 15px;
   font-size: 1.8em;
 }
-
 a {
   color: #8be9fd;
-  font-family: "Montserrat", sans-serif;
   text-decoration: none;
 }
 
-/* Ajustar posição dos elementos em lista */
-li {
+/* Projects list */
+.projects-list {
+  display: flex;
+  scroll-snap-type: x proximity;
+  overflow-x: auto;
   margin-top: 15px;
-}
-.social-icon {
-  filter: invert(1) grayscale(100%) brightness(100%);
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
 }
 
 .project-card {
-  visibility: hidden;
+  flex: 1 0 90%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  scroll-snap-align: center;
+  margin-right: 10px;
   background: #282a36;
   border-radius: 12px;
   padding: 20px;
-  margin-bottom: 20px;
   border: 2px solid #44475a;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
 }
 
 .project-title {
@@ -92,7 +92,18 @@ li {
   color: #f8f8f2;
 }
 
-ul {
+/* Contact */
+.social-icon {
+  filter: invert(1) grayscale(100%) brightness(100%);
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+
+.contact ul {
   list-style-type: none;
   padding: 0;
+}
+.contact li {
+  margin-top: 15px;
 }
