@@ -69,8 +69,34 @@
             <div class="projects-list">
               <div class="project-card">
                 <h3 class="project-title">
+                  <a href="https://github.com/kaicsm/lacerda-status"
+                    >Lacerda Status</a
+                  >
+                </h3>
+                <ul>
+                  <li>
+                    <p>Java</p>
+                    <p>Android</p>
+                    <p>Server</p>
+                  </li>
+                </ul>
+                <p class="project-descrition">
+                  Um aplicativo Android feito para um projeto escolar, que tem
+                  como objetivo coletar informações da compostagem e da horta da
+                  minha escola.
+                </p>
+              </div>
+              <div class="project-card">
+                <h3 class="project-title">
                   <a href="https://github.com/kaicsm/web-chat">Web Chat</a>
                 </h3>
+                <ul>
+                  <li>
+                    <p>Python</p>
+                    <p>Flask</p>
+                    <p>SocketIO</p>
+                  </li>
+                </ul>
                 <p class="project-descrition">
                   Um chat online escrito em python usando o framework Flask e
                   Flask-SocketIO que reúne diversos conceiros sobre back-end e
@@ -79,19 +105,17 @@
               </div>
               <div class="project-card">
                 <h3 class="project-title">
-                  <a href="https://github.com/kaicsm/portfolio">Portfólio</a>
-                </h3>
-                <p class="project-descrition">
-                  Você está experimentando este projeto agora mesmo! Este é o
-                  meu portfólio escrito em Python com Flask.
-                </p>
-              </div>
-              <div class="project-card">
-                <h3 class="project-title">
                   <a href="https://github.com/kaicsm/dracula-androidide"
                     >Dracula AndroidIDE</a
                   >
                 </h3>
+
+                <ul>
+                  <li>
+                    <p>Theme</p>
+                    <p>AndroidIDE</p>
+                  </li>
+                </ul>
                 <p class="project-descrition">
                   Tema Dracula feito para o AndroidIDE, uma ferramenta poderosa
                   para criação de aplicativos no próprio Android.
@@ -142,11 +166,17 @@
           console.log("particles.json foi carregado");
         },
       );
-      ScrollReveal().reveal(".about", { delay: 200 });
-      ScrollReveal().reveal("#about-description", { delay: 200 });
-      ScrollReveal().reveal(".projects", { delay: 200 });
-      ScrollReveal().reveal(".contact", { delay: 200 });
-      ScrollReveal().reveal("ul", { delay: 200 });
+      var scrollOptions = {
+        delay:300,
+        duration:700,
+        distance:'50px',
+        origin:'top'
+      };
+      ScrollReveal().reveal(".about", scrollOptions);
+      ScrollReveal().reveal("#about-description", scrollOptions);
+      ScrollReveal().reveal(".projects", scrollOptions);
+      ScrollReveal().reveal(".contact", scrollOptions);
+      ScrollReveal().reveal(".contacts ul", scrollOptions);
     </script>
   </body>
 </html>

@@ -54,9 +54,14 @@ h2 {
   margin-top: 15px;
   font-size: 1.8em;
 }
+
 a {
   color: #8be9fd;
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #8be;
 }
 
 /* Projects list */
@@ -90,6 +95,27 @@ a {
 
 .project-description {
   color: #f8f8f2;
+}
+
+/* Tags */
+.project-card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  align-self: flex-start;
+}
+
+.project-card ul li p {
+  font-family: monospace;
+  font-size: 0.8rem;
+  display: inline-block;
+  border: 1px solid #8be9fd;
+  background-color: transparent;
+  color: #f8f8f2;
+  border-radius: 10px;
+  margin-right: 5px;
+  padding: 3px 5px;
 }
 
 /* Contact */
