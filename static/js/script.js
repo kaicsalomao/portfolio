@@ -11,6 +11,12 @@ ScrollReveal().reveal(".line-ligature", {
   delay: 300,
   duration: 700,
 });
+ScrollReveal().reveal(".more-information p", {
+  delay: 500,
+  origin: "left",
+  distance: "40px",
+  duration: 700,
+});
 ScrollReveal().reveal(".line-aditional", {
   delay: 100,
   duration: 700,
