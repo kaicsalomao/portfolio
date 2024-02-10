@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
   var instance = new TypeIt(".header-description", {
     speed: 90,
-    startDelay: 500,
+    startDelay: 1000,
     loop: true,
   });
   content.forEach((str, index) => {
