@@ -46,26 +46,3 @@ ScrollReveal().reveal(".projects-list", {
 });
 ScrollReveal().reveal(".contact", scrollOptions);
 ScrollReveal().reveal(".contacts ul", scrollOptions);
-
-// Previnir inicio antecipado
-document.addEventListener("DOMContentLoaded", () => {
-  var content = [
-    "Programador",
-    "Designer",
-    "Estudante",
-    "Entusiasta da tecnologia",
-  ];
-  var instance = new TypeIt(".header-description", {
-    speed: 90,
-    startDelay: 1000,
-    loop: true,
-  });
-  content.forEach((str, index) => {
-    if (index < content.length - 1) {
-      instance.type(str).pause(1200).delete();
-    } else {
-      instance.type(str).pause(1700);
-    }
-  });
-  instance.go()
-});
