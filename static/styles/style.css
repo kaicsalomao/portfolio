@@ -32,23 +32,31 @@ body {
   border-radius: 50%;
 }
 
-#header-title {
-  color: #ffb454;
+.lead {
+  width:  80%;
+  height: max-content;
+  font-size: 1.2em;
+  text-align: center;
   margin-top: 10px;
-  font-weight: bold;
-  font-size: 1.0em;
+  color: #59c2ff;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+  	opacity: 0;
+  }
+  100% {
+  	opacity: 1;
+  }
 }
 
 .header-description {
-  width:  80%;
-  height: 140px;
-  font-size: 1.2em;
-  text-align: center;
-}
-
-.lead {
-  margin-top: 10px;
-  color: #59c2ff;
+  font-size: 0.9em;
+  margin-top: 0;
+  color: #a9aaab;
 }
 
 .content {
@@ -56,6 +64,9 @@ body {
   background: transparent;
 }
 
+#about-description {
+	color: #cdd0d4;
+}
 /* ... */
 h2 {
   color: #59c2ff;
@@ -82,6 +93,7 @@ a:hover {
 }
 .more-information p {
   font-size: 0.9em;
+  color: #a9aaab;
   margin-left: 10px;
   margin-top: 15px;
 }
@@ -116,9 +128,9 @@ a:hover {
   scroll-snap-align: center;
   margin-right: 10px;
   background: #282a36;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 20px;
-  border: 2px solid #44475a;
+  border: 2px solid transparent;
   box-sizing: border-box;
 }
 
@@ -129,7 +141,7 @@ a:hover {
 }
 
 .project-description {
-  color: #f8f8f2;
+  color: #cdd0d4;
 }
 
 /* Tags */
