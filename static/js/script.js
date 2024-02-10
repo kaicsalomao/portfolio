@@ -19,9 +19,11 @@ ScrollReveal().reveal(".projects", scrollOptions);
 ScrollReveal().reveal(".contact", scrollOptions);
 ScrollReveal().reveal(".contacts ul", scrollOptions);
 
-
-new TypeIt(".header-description", {
-  strings: "Ajudando empresas e pessoas a contruir aplicativos e sites digitais.",
-  speed: 60,
-  loop: false,
-}).go();
+// Previnir inicio antecipado
+document.addEventListener("DOMContentLoaded", () => {
+  new TypeIt(".header-description", {
+    strings: "Ajudando empresas e pessoas a contruir aplicativos e sites digitais.",
+    speed: 60,
+    loop: false,
+  }).go();
+});
