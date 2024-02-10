@@ -35,15 +35,20 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="static/styles/style.css" />
+    
+    <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- TypeIt -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
   </head>
   <body>
     <div id="particles-container"></div>
     <div class="container">
       <section id="header">
-        <h1 id="page-title">Kaic Salomão 👨‍💻</h1>
-        <p class="lead">Desenvolvedor full-stack e entusiasta da tecnologia</p>
+        <img src="static/imgs/profile.jpg" alt="profile" id="header-image"/>
+        <p class="lead header-description"></p>
       </section>
 
       <section id="body">
@@ -51,11 +56,14 @@
           <div class="about">
             <h2>Sobre mim</h2>
             <p id="about-description">
-              Sou um desenvolvedor apaixonado por programação! Tenho experiência
-              em criar aplicações Android e sistemas back-end robustos.
-              Sempre buscando aprender novas ferramentas e técnicas para
-              melhorar minhas habilidades e projetos.
+            	Sou um estudante de desenvolvimento de sistemas que é integrado ao meu ensino médio. Tenho experiência em desenvolver aplicativos Android, sistemas web e interfaces gráficas. Me apaixonei por programação aos 11 anos de idade e desde então venho aprimorando meus conhecimentos e habilidades.
             </p>
+          </div>
+          
+          <div class="more-information">
+            <div class="line-ligature"></div>
+            <div class="line-aditional"></div>
+            <p>Por sempre gostar de criar coisas, encontrei na programação a liberdade para isso.</p>
           </div>
 
           <div class="projects">
@@ -75,9 +83,8 @@
                   </li>
                 </ul>
                 <p class="project-descrition">
-                  Um aplicativo Android feito para um projeto escolar, que tem
-                  como objetivo coletar informações da compostagem e da horta da
-                  minha escola.
+                  Um aplicativo escolar para Android que monitora as condições da compostagem e da
+        horta da minha escola e deve fazer comunicação com a placa ESP32 via Cliente/Servidor.
                 </p>
               </div>
               <div class="project-card">
@@ -92,9 +99,9 @@
                   </li>
                 </ul>
                 <p class="project-descrition">
-                  Um chat online escrito em python usando o framework Flask e
-                  Flask-SocketIO que reúne diversos conceiros sobre back-end e
-                  front-end.
+                  Um chat online que permite a comunicação em tempo real entre os
+        usuários. Foi um projeto pessoal que me ensinou sobre os conceitos de
+        back-end e front-end, além de usar o framework Flask e o Flask-SocketIO.
                 </p>
               </div>
               <div class="project-card">
@@ -111,13 +118,22 @@
                   </li>
                 </ul>
                 <p class="project-descrition">
-                  Tema Dracula feito para o AndroidIDE, uma ferramenta poderosa
-                  para criação de aplicativos no próprio Android.
+                  Um tema escuro para o AndroidIDE, uma ferramenta que permite
+        criar aplicativos Android diretamente no celular. Foi um projeto de
+        contribuição para a comunidade do Dracula, um conjunto de temas para
+        diversas plataformas.
                 </p>
               </div>
             </div>
           </div>
-
+          
+          <div class="more-information">
+            <div class="line-ligature"></div>
+            <div class="line-aditional"></div>
+            <p>Meus projetos refletem meu compromisso com
+    a qualidade.</p>
+          </div>
+          
           <div class="contact">
             <h2>Contato</h2>
             <p>
@@ -151,26 +167,6 @@
       </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-    <script>
-      particlesJS.load(
-        "particles-container",
-        "static/particles.json",
-        function () {
-          console.log("particles.json foi carregado");
-        },
-      );
-      var scrollOptions = {
-        delay: 300,
-        duration: 700,
-        distance: "30px",
-        origin: "top",
-      };
-      ScrollReveal().reveal(".about", scrollOptions);
-      ScrollReveal().reveal("#about-description", scrollOptions);
-      ScrollReveal().reveal(".projects", scrollOptions);
-      ScrollReveal().reveal(".contact", scrollOptions);
-      ScrollReveal().reveal(".contacts ul", scrollOptions);
-    </script>
+    <script src="static/js/script.js"></script>
   </body>
 </html>
