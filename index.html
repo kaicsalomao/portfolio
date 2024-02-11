@@ -29,12 +29,6 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="static/styles/style.css" />
     
     <!-- ScrollReveal -->
@@ -43,11 +37,14 @@
   <body>
     <div id="particles-container"></div>
     <div class="container">
-      <section id="header">
+      <section class="header">
         <img src="static/imgs/profile.jpg" alt="profile" id="header-image"/>
-        <p class="lead">Ajudando empresas e pessoas a contruir aplicativos e sites digitais</p>
+        <h1 style="visibility: hidden;">Oi, meu nome é <br><strong>Kaic</strong>.</h1>
       </section>
-
+      <div class="header-ligature-box">
+      	<p id="header-ligature-text"style="visibility:hidden;">DESCER</p>
+          <div id="header-ligature"style="visibility:hidden;"></div>
+      </div>
       <section id="body">
         <div class="content">
           <div class="about">
@@ -124,11 +121,11 @@
             </div>
           </div>
           
-          <div class="more-information">
-            <div class="line-ligature"></div>
-            <div class="line-aditional"></div>
-            <p>Meus projetos refletem meu compromisso com
+          <div class="more-information" style="justify-content: flex-end;">
+            <p style="text-align: right;margin-right:15px">Meus projetos refletem meu compromisso com
     a qualidade.</p>
+            <div class="line-aditional"></div>
+            <div class="line-ligature"></div>
           </div>
           
           <div class="contact">
@@ -163,6 +160,7 @@
         </div>
       </section>
     </div>
+    <div id="spacing-bottom"></div>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="static/js/script.js"></script>
   </body>
