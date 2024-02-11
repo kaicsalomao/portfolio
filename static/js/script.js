@@ -63,8 +63,6 @@ ScrollReveal().reveal(".projects-list", {
   distance: "30px",
   origin: "top"
 });
-ScrollReveal().reveal(".contact", scrollOptions);
-ScrollReveal().reveal(".contacts ul", scrollOptions);
 
  var headerLigature = document.querySelector("#header-ligature");
  var headerLigatureBox = document.querySelector(".header-ligature-box");
